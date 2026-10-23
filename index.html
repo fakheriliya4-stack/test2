@@ -1,0 +1,387 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#050a10">
+  <meta name="description" content="به تیم خلاق GLITCHLOG بپیوندید؛ جایی برای ساختن ایده‌های بزرگ با کد و خلاقیت.">
+  <title>GLITCHLOG — تیمی برای ساختن آینده</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="noise"></div><div class="topline"></div>
+  <header>
+    <div class="shell nav">
+      <a class="brand" href="#/home" aria-label="GLITCHLOG صفحه اصلی">
+        <img class="brand-logo" src="/glitchlog-logo.jpg" alt="GLITCHLOG logo">
+        <span>GLITCHLOG<small>BUILD. CREATE. BELONG.</small></span>
+      </a>
+      <nav class="navlinks" id="navlinks" aria-label="منوی اصلی">
+        <button class="navlink active" data-route="home">صفحه اصلی</button>
+        <button class="navlink" data-route="team">اعضای تیم</button>
+        <button class="navlink" data-route="register">شرایط عضویت</button>
+        <button class="navlink" data-route="home" data-scroll="requirements">درباره ما</button>
+      </nav>
+      <div class="nav-actions">
+        <button class="icon-button mobile-menu" id="mobileMenu" aria-label="باز کردن منو">☰</button>
+        <div class="language-switch" aria-label="Language"><button type="button" class="lang-btn active" data-lang="fa">FA</button><button type="button" class="lang-btn" data-lang="en">EN</button><button type="button" class="lang-btn" data-lang="es">ES</button></div><div class="auth-actions" id="authActions"><button class="secondary" id="loginOpen">ورود</button><button class="primary" id="signupOpen">ساخت حساب</button><button class="secondary hidden" id="profileOpen">پروفایل من</button><button class="secondary hidden" id="adminOpen">پنل مدیر</button><button class="secondary hidden" id="logoutButton">خروج</button></div>
+      </div>
+    </div>
+  </header>
+
+  <main class="shell">
+    <!-- PAGE 1: HOME -->
+    <section class="page active" id="page-home" aria-label="صفحه اصلی">
+      <div class="hero">
+        <div class="hero-copy">
+          <span class="eyebrow">CODE / CREATE / GROW</span>
+          <h1>تیم <span>GLITCHLOG</span><br>جایی برای ایده‌های بزرگ</h1>
+          <p class="lead">ما فقط کدنویسی نمی‌کنیم؛ ایده‌ها را به تجربه‌هایی واقعی تبدیل می‌کنیم. کنار افرادی قرار بگیر که یاد می‌گیرند، می‌سازند و آینده را با هم شکل می‌دهند.</p>
+          <div class="hero-ctas"><button class="primary" data-route="team">مشاهده اعضای تیم <span>←</span></button><button class="secondary" data-route="register">درخواست عضویت <span>↗</span></button></div>
+          <div class="hero-meta"><div><strong>۰۶+</strong><span>عضو خلاق</span></div><div><strong>۰۴</strong><span>حوزه تخصصی</span></div><div><strong>∞</strong><span>ایده برای ساختن</span></div></div>
+        </div>
+        <div class="hero-art" aria-hidden="true"><div class="art-orbit"></div><div class="art-orbit two"></div><div class="code-lines"><i></i><i></i><i></i></div><div class="cube"><div class="cube-piece"></div><div class="cube-piece left"></div><div class="cube-piece right"></div><div class="cube-piece core"></div></div><div class="float-label label-a">IDEAS / CODE / IMPACT</div><div class="float-label label-b">&lt;BUILD_SOMETHING&gt;</div></div>
+        <div class="hero-scan"></div>
+      </div>
+
+      <div class="section intro-grid">
+        <article class="panel about-panel"><span class="eyebrow">درباره تیم ما</span><h2>ما فقط کد نمی‌نویسیم؛<br><span class="gradient-text">آینده را می‌سازیم.</span></h2><p>GLITCHLOG یک تیم چندتخصصی برای توسعه وب، طراحی محصول و تجربه‌های دیجیتال است. ما یادگیری را با پروژه‌های واقعی ترکیب می‌کنیم تا هر عضو بتواند مهارتش را رشد دهد و اثر کارش را ببیند.</p><button class="secondary" data-route="team">با اعضای تیم آشنا شو ←</button></article>
+        <div class="service-grid">
+          <article class="panel service"><div class="service-icon">&lt;/&gt;</div><h3>توسعه وب</h3><p>Web Development</p></article>
+          <article class="panel service"><div class="service-icon">✳</div><h3>هوش مصنوعی</h3><p>Artificial Intelligence</p></article>
+          <article class="panel service"><div class="service-icon">⌘</div><h3>پروژه‌های متن‌باز</h3><p>Open Source</p></article>
+          <article class="panel service"><div class="service-icon">⚙</div><h3>مهندسی سیستم</h3><p>System Engineering</p></article>
+        </div>
+      </div>
+
+      <div class="section requirements" id="requirements">
+        <article class="panel list-panel"><h3><span class="mini-icon">♧</span>شرایط عضویت در تیم</h3><p class="tiny">چیزی که از هر هم‌تیمی انتظار داریم.</p><ul class="check-list"><li>علاقه به یادگیری و حل مسئله</li><li>مسئولیت‌پذیری و ارتباط مؤثر</li><li>توانایی کار تیمی و دریافت بازخورد</li><li>پایبندی به زمان‌بندی پروژه‌ها</li><li>انگیزه برای ساختن نمونه‌کار واقعی</li></ul></article>
+        <article class="panel list-panel"><h3><span class="mini-icon">▣</span>مدارک مورد نیاز</h3><p class="tiny">برای اینکه بهتر با توانایی‌هایت آشنا شویم.</p><ul class="check-list"><li>رزومه شخصی با فرمت HTML</li><li>لینک پورتفولیو یا سایت رزومه</li><li>مدارک آموزشی یا گواهی‌های مرتبط</li><li>لینک نمونه‌کارها و پروژه‌ها</li><li>معرفی کوتاه و شعار شخصی</li></ul><button class="secondary" style="margin-top:17px" data-route="register">تکمیل فرم عضویت ←</button></article>
+        <article class="panel quote-panel"><div><div class="quote-mark">“</div><p>هر کسی می‌تواند چیزی بسازد؛ ما دنبال آدم‌هایی هستیم که کنجکاوند، به اشتراک می‌گذارند و از بهتر کردن ایده‌ها نمی‌ترسند.</p></div><small>— تیم GLITCHLOG</small></article>
+      </div>
+      <div class="join-banner"><div class="join-copy"><h3>آماده‌ای به ما بپیوندی؟</h3><p>قدم بعدی تو می‌تواند شروع یک پروژه متفاوت باشد.</p></div><button class="primary" data-route="register">شروع ثبت‌نام <span>←</span></button></div>
+    </section>
+
+    <!-- PAGE 2: TEAM -->
+    <section class="page" id="page-team" aria-label="اعضای تیم">
+      <div class="panel page-hero"><div><span class="eyebrow">OUR TEAM / PEOPLE WHO BUILD</span><h1>اعضای <span>تیم</span></h1><p class="lead">آدم‌هایی با مهارت‌ها و نگاه‌های متفاوت که برای یک هدف مشترک کنار هم کار می‌کنند.</p></div><div class="stats"><div class="stat"><strong>۰۶</strong><span>عضو تیم</span></div><div class="stat"><strong>۰۵</strong><span>تخصص</span></div><div class="stat"><strong>۱۰۰٪</strong><span>انرژی برای رشد</span></div></div></div>
+      <div class="toolbar"><label class="search-wrap"><span aria-hidden="true">⌕</span><input type="search" id="memberSearch" placeholder="جست‌وجوی نام یا مهارت..." aria-label="جست‌وجوی اعضای تیم"></label><div class="filters" id="filters"><button class="filter active" data-filter="All">همه</button><button class="filter" data-filter="Frontend">Frontend</button><button class="filter" data-filter="Backend">Backend</button><button class="filter" data-filter="Design">Design</button><button class="filter" data-filter="DevOps">DevOps</button></div></div>
+      <div class="team-grid" id="teamGrid"><div class="empty-state">در حال بارگذاری اعضای تیم…</div></div>
+      <div class="join-banner"><div class="join-copy"><h3>جای تو در تیم خالی است.</h3><p>مهارت‌هایت را به ما معرفی کن و با هم چیزهای تازه بسازیم.</p></div><button class="primary" data-route="register">درخواست عضویت <span>←</span></button></div>
+    </section>
+
+    <!-- PAGE 3: REGISTRATION -->
+    <section class="page" id="page-register" aria-label="فرم ثبت‌نام">
+      <div class="register-layout">
+        <aside class="panel register-aside"><div><span class="eyebrow">JOIN GLITCHLOG</span><h1>فرم <span>ثبت‌نام</span></h1><p class="lead">اگر برای یادگیری، خلق کردن و کار گروهی انگیزه داری، اطلاعاتت را ثبت کن تا با مسیر و توانایی‌هایت آشنا شویم.</p></div><div class="aside-art" aria-hidden="true"><div class="aside-ring"><span>G.</span></div></div><div><div class="eyebrow">YOUR SKILLS / OUR FUTURE</div><div class="benefit-list"><div class="benefit"><div class="benefit-icon">&lt;/&gt;</div><div><b>رشد تخصصی</b><small>یادگیری در کنار پروژه‌های واقعی</small></div></div><div class="benefit"><div class="benefit-icon">♧</div><div><b>تیم حرفه‌ای</b><small>همکاری، بازخورد و تبادل تجربه</small></div></div><div class="benefit"><div class="benefit-icon">◇</div><div><b>محیط امن</b><small>احترام به ایده‌ها و استانداردها</small></div></div></div></div></aside>
+        <section class="panel form-panel"><div class="form-title"><h2>اطلاعات فردی و تخصصی</h2><span class="step">گام ۱ از ۱</span></div>
+          <form id="applicationForm" enctype="multipart/form-data" novalidate>
+            <div class="form-grid">
+              <div class="field"><label for="name">نام و نام خانوادگی <em>*</em></label><input id="name" name="name" autocomplete="name" placeholder="مثلاً: علی محمدی" required maxlength="100"></div>
+              <div class="field"><label for="phone">شماره تماس <em>*</em></label><input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="09xx xxx xxxx" required maxlength="30"></div>
+              <div class="field full"><label for="portfolio">لینک سایت رزومه / پورتفولیو <em>*</em></label><input id="portfolio" name="portfolio" type="url" placeholder="https://your-portfolio.com" required maxlength="500"></div>
+              <div class="field full"><label for="resume">آپلود فایل رزومه HTML <em>*</em></label><div class="file-box"><input id="resume" name="resume" type="file" accept=".html,.htm,text/html" required><span class="hint">فرمت مجاز: .html یا .htm — حداکثر ۲ مگابایت</span></div></div>
+              <div class="field full"><label for="motto">شعار فردی <em>*</em></label><textarea id="motto" name="motto" required maxlength="600" placeholder="یک جمله که طرز فکر، انگیزه یا مسیر تو را نشان می‌دهد..."></textarea></div>
+              <div class="field full"><label for="documents">آپلود مدارک و گواهی‌ها <em>*</em></label><div class="file-box"><input id="documents" name="documents" type="file" accept=".pdf,.png,.jpg,.jpeg,.doc,.docx,.zip" multiple required><span class="hint">PDF، PNG، JPG، DOC، DOCX یا ZIP — حداکثر ۱۰ مگابایت در مجموع</span></div></div>
+              <div class="field full"><label class="terms"><input type="checkbox" name="terms" id="terms" required><span>تأیید می‌کنم اطلاعات واردشده صحیح است و با بررسی درخواست عضویت موافقم. فایل‌ها فقط برای بررسی همین درخواست ذخیره می‌شوند.</span></label></div>
+            </div>
+            <div class="submit-row"><button class="primary" id="submitButton" type="submit">ارسال درخواست عضویت <span>↗</span></button><div class="form-status" id="formStatus" role="status" aria-live="polite"></div></div>
+            <p class="privacy-note">نکته: این فرم با بک‌اند پایتون اجرا می‌شود. برای ذخیره درخواست و فایل‌ها، سایت را از طریق آدرس محلی نمایش‌داده‌شده پس از اجرای <b dir="ltr">app.py</b> باز کن.</p>
+          </form>
+        </section>
+      </div>
+    </section>
+
+    <section class="page" id="page-profile" aria-label="پروفایل کاربری">
+      <section class="panel auth-panel"><span class="eyebrow">YOUR SPACE / PROFILE</span><h2>ویرایش پروفایل</h2><p class="lead">اطلاعات حساب خودت را به‌روزرسانی کن.</p>
+        <form id="profileForm"><div class="auth-grid"><div class="field"><label for="profileName">نام نمایشی</label><input id="profileName" required maxlength="100"></div><div class="field"><label for="profilePhone">شماره تماس</label><input id="profilePhone" maxlength="30"></div><div class="field full"><label for="profilePortfolio">لینک سایت رزومه</label><input id="profilePortfolio" type="url" placeholder="https://..."></div><div class="field full"><label for="profileMotto">شعار فردی</label><textarea id="profileMotto" maxlength="600"></textarea></div></div><button class="primary" type="submit">ذخیره تغییرات ↗</button><div class="auth-status" id="profileStatus" role="status"></div></form></section>
+    </section>
+
+    <section class="page" id="page-admin" aria-label="پنل مدیر">
+      <section class="panel auth-panel"><span class="eyebrow">GLITCHLOG / ADMIN</span><h2>پنل مدیریت</h2><p class="lead">درخواست‌های عضویت ثبت‌شده در پایگاه داده.</p><button class="secondary" id="refreshApplications">بارگذاری مجدد</button><div class="admin-list" id="adminApplications"><p class="muted">در حال دریافت درخواست‌ها…</p></div><h2 class="admin-subtitle">پیام‌های ناشناس</h2><button class="secondary" id="refreshAnonymousMessages" type="button">بارگذاری پیام‌ها</button><div class="admin-list" id="adminAnonymousMessages"><p class="muted">برای مشاهده پیام‌ها وارد پنل مدیر شو.</p></div></section>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="panel contact-panel">
+        <div class="contact-intro"><span class="eyebrow">LET'S TALK / GLITCHLOG</span><h2>با ما در ارتباط باش</h2><p class="lead">سؤال، پیشنهاد یا حرفی داری؟ از تلگرام با ما در ارتباط باش یا پیام ناشناست را همین‌جا بفرست.</p><a class="primary telegram-link" href="https://t.me/glitchlog_channel" target="_blank" rel="noopener noreferrer"><span aria-hidden="true">➤</span> ارتباط با ما در تلگرام ↗</a></div>
+        <form class="anonymous-form" id="anonymousMessageForm"><h3>فرستادن پیام ناشناس</h3><p class="tiny">نام و اطلاعات تماس لازم نیست؛ فقط پیام خودت را بنویس.</p><label for="anonymousMessage">متن پیام</label><textarea id="anonymousMessage" name="message" minlength="3" maxlength="3000" required placeholder="پیامت را اینجا بنویس..."></textarea><div class="form-foot"><small class="hint">۳ تا ۳۰۰۰ نویسه</small><button class="primary" type="submit" id="anonymousSubmit">ارسال ناشناس ↗</button></div><div class="form-status" id="anonymousStatus" role="status" aria-live="polite"></div></form>
+      </div>
+    </section>
+  </main>
+
+  <div class="page" id="page-auth" style="display:none"></div>
+  <footer><div class="shell footer-row"><a class="brand" href="#/home"><img class="brand-logo" src="/glitchlog-logo.jpg" alt="GLITCHLOG logo"><span>GLITCHLOG<small>BUILD. CREATE. BELONG.</small></span></a><div class="footer-links"><a href="#/home">صفحه اصلی</a><a href="#/team">اعضای تیم</a><a href="#/register">ثبت‌نام</a><a href="#contact">ارتباط با ما</a><a href="https://t.me/glitchlog_channel" target="_blank" rel="noopener noreferrer">تلگرام ↗</a></div><span class="footer-tagline">BUILD. CREATE. BELONG.</span><span class="copyright">© 2026 GLITCHLOG Team. All rights reserved.</span></div></footer>
+
+  <dialog id="authDialog" class="panel" style="width:min(560px,calc(100% - 24px));padding:26px;background:#08131e;color:var(--text);border:1px solid var(--line);border-radius:20px">
+    <button type="button" id="authClose" class="secondary" style="float:left">بستن ×</button><span class="eyebrow">WELCOME TO GLITCHLOG</span><h2 id="authTitle">ورود به حساب</h2>
+    <form id="authForm"><div class="auth-grid"><div class="field full" id="authNameWrap"><label for="authName">نام کامل</label><input id="authName" autocomplete="name" maxlength="100"></div><div class="field full"><label for="authUsername">نام کاربری</label><input id="authUsername" autocomplete="username" minlength="3" maxlength="30" required></div><div class="field full"><label for="authPassword">رمز عبور</label><input id="authPassword" type="password" autocomplete="current-password" minlength="10" required><small class="hint">حداقل ۱۰ کاراکتر</small></div></div><button class="primary" id="authSubmit" type="submit" style="margin-top:18px">ورود</button><div class="auth-status" id="authStatus" role="status"></div></form>
+    <div class="auth-switch"><button class="secondary" id="switchSignup" type="button">ساخت حساب کاربری</button><button class="secondary" id="switchAdmin" type="button">ورود مدیر</button><button class="secondary hidden" id="switchLogin" type="button">ورود کاربر</button></div>
+  </dialog>
+  <script>
+    const fallbackMembers = [
+      {id:1,name:'علی محمدی',role:'Full Stack Developer',category:'Backend',motto:'کدِ خوب، مسئله را حل می‌کند؛ کدِ عالی، مسئله را ساده می‌کند.',skills:['Python','React','PostgreSQL'],resume_url:'https://github.com/',initials:'ع‌م',tone:'mint'},
+      {id:2,name:'سارا رضایی',role:'UI/UX Designer',category:'Design',motto:'تجربه‌های ساده، از فکرهای پیچیده متولد می‌شوند.',skills:['Figma','Photoshop','UI/UX'],resume_url:'https://www.behance.net/',initials:'س‌ر',tone:'violet'},
+      {id:3,name:'امیر حسینی',role:'Backend Developer',category:'Backend',motto:'زیر هر رابط خوب، معماری‌ای قابل اعتماد وجود دارد.',skills:['Python','Flask','Docker'],resume_url:'https://github.com/',initials:'ا‌ح',tone:'orange'},
+      {id:4,name:'رضا کریمی',role:'Frontend Developer',category:'Frontend',motto:'جزئیات کوچک‌اند که یک محصول را به‌یادماندنی می‌کنند.',skills:['HTML','CSS','JavaScript'],resume_url:'https://github.com/',initials:'ر‌ک',tone:'blue'},
+      {id:5,name:'مینا احمدی',role:'Graphic Designer',category:'Design',motto:'هر ایده، قبل از دیده‌شدن، به یک تصویر نیاز دارد.',skills:['Photoshop','Illustrator','Branding'],resume_url:'https://www.behance.net/',initials:'م‌ا',tone:'pink'},
+      {id:6,name:'پویا نادری',role:'DevOps Engineer',category:'DevOps',motto:'ساختن مهم است؛ ساختن چیزی که همیشه کار کند مهم‌تر است.',skills:['Linux','Docker','AWS'],resume_url:'https://github.com/',initials:'پ‌ن',tone:'cyan'}
+    ];
+    let members = [...fallbackMembers];
+    let activeFilter = 'All';
+    const $ = (s, root=document) => root.querySelector(s);
+    const $$ = (s, root=document) => [...root.querySelectorAll(s)];
+
+    function routeFromHash(){const key=(location.hash.split('/')[1]||'home').toLowerCase();return ['home','team','register','profile','admin'].includes(key)?key:'home'}
+    function showRoute(route, scrollTop=true){
+      const safe=['home','team','register','profile','admin'].includes(route)?route:'home';
+      $$('.page').forEach(p=>p.classList.toggle('active',p.id===`page-${safe}`));
+      $$('.navlink[data-route]').forEach(b=>b.classList.toggle('active',b.dataset.route===safe));
+      $('#navlinks').classList.remove('open');
+      if(safe==='team') renderMembers();
+      if(safe==='profile') loadProfile();
+      if(safe==='admin'){loadApplications();loadAnonymousMessages();}
+      if(scrollTop) window.scrollTo({top:0,behavior:'smooth'});
+    }
+    function go(route){if(location.hash!==`#/${route}`)location.hash=`/${route}`;else showRoute(route)}
+    document.addEventListener('click',e=>{
+      const routeButton=e.target.closest('[data-route]');
+      if(routeButton){const route=routeButton.dataset.route;const scrollTarget=routeButton.dataset.scroll;go(route);if(scrollTarget)setTimeout(()=>document.getElementById(scrollTarget)?.scrollIntoView({behavior:'smooth'}),100)}
+    });
+    window.addEventListener('hashchange',()=>showRoute(routeFromHash()));
+    $('#mobileMenu').addEventListener('click',()=>$('#navlinks').classList.toggle('open'));
+
+    function escapeHTML(value){return String(value??'').replace(/[&<>"']/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]))}
+    function renderMembers(){
+      const query=$('#memberSearch').value.trim().toLocaleLowerCase('fa');
+      const filtered=members.filter(m=>{
+        const matchCat=activeFilter==='All'||m.category===activeFilter;
+        const haystack=[m.name,m.role,m.category,m.motto,...(m.skills||[])].join(' ').toLocaleLowerCase('fa');
+        return matchCat&&(!query||haystack.includes(query));
+      });
+      const grid=$('#teamGrid');
+      if(!filtered.length){grid.innerHTML='<div class="empty-state">'+localized('عضوی با این مشخصات پیدا نشد. فیلتر یا عبارت جست‌وجو را تغییر بده.')+'</div>';return}
+      grid.innerHTML=filtered.map(m=>{
+        const safeURL=/^https?:\/\//i.test(m.resume_url||'')?m.resume_url:'#';
+        const skills=(m.skills||[]).map(skill=>`<span class="tag">${escapeHTML(skill)}</span>`).join('');
+        const motto=localized(m.motto);
+        const resumeLabel=localized('رزومه و نمونه‌کار');
+        const viewResume=localized('مشاهده رزومه ↗');
+        return `<article class="member-card"><div class="member-top"><div class="avatar ${escapeHTML(m.tone||'mint')}">${escapeHTML(m.initials||m.name.slice(0,2))}</div><div><div class="member-name">${escapeHTML(m.name)}</div><div class="member-role" dir="ltr">${escapeHTML(m.role)}</div></div><a class="member-link" href="${escapeHTML(safeURL)}" target="_blank" rel="noopener noreferrer" aria-label="دیدن سایت رزومه ${escapeHTML(m.name)}">↗</a></div><p class="member-motto">«${escapeHTML(motto)}»</p><div class="tags">${skills}</div><div class="member-bottom"><span>${resumeLabel}</span><a class="secondary" href="${escapeHTML(safeURL)}" target="_blank" rel="noopener noreferrer">${viewResume}</a></div></article>`
+      }).join('');
+    }
+    $('#memberSearch').addEventListener('input',renderMembers);
+    $$('.filter').forEach(btn=>btn.addEventListener('click',()=>{activeFilter=btn.dataset.filter;$$('.filter').forEach(f=>f.classList.toggle('active',f===btn));renderMembers()}));
+
+    async function loadMembers(){
+      try{const response=await fetch('/api/members',{headers:{'Accept':'application/json'}});if(!response.ok)throw new Error('API unavailable');const data=await response.json();if(Array.isArray(data.members)&&data.members.length)members=data.members}
+      catch(_err){/* index.html remains browsable offline; backend is needed for submissions */}
+      renderMembers();
+    }
+    loadMembers();
+    showRoute(routeFromHash(),false);
+
+    let authMode='login'; let currentUser=null;
+    const authDialog=$('#authDialog');
+    function openAuth(mode){authMode=mode;$('#authTitle').textContent=localized(mode==='signup'?'ساخت حساب کاربری':mode==='admin'?'ورود مدیر':'ورود به حساب');$('#authSubmit').textContent=localized(mode==='signup'?'ساخت حساب':mode==='admin'?'ورود به پنل مدیر':'ورود');$('#authNameWrap').classList.toggle('hidden',mode!=='signup');$('#authPassword').autocomplete=mode==='signup'?'new-password':'current-password';$('#switchSignup').classList.toggle('hidden',mode==='signup');$('#switchLogin').classList.toggle('hidden',mode!=='admin');$('#authStatus').textContent='';$('#authStatus').className='auth-status';authDialog.showModal()}
+    function updateAuthUI(){const logged=!!currentUser;$('#loginOpen').classList.toggle('hidden',logged);$('#signupOpen').classList.toggle('hidden',logged);$('#profileOpen').classList.toggle('hidden',!logged||currentUser.admin);$('#adminOpen').classList.toggle('hidden',!logged||!currentUser.admin);$('#logoutButton').classList.toggle('hidden',!logged)}
+    async function requestJSON(url,data){const r=await fetch(url,{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify(data)});const j=await r.json();if(!r.ok||j.ok===false)throw new Error(j.message||'درخواست ناموفق بود.');return j}
+    $('#loginOpen').onclick=()=>openAuth('login');$('#signupOpen').onclick=()=>openAuth('signup');$('#adminOpen').onclick=()=>go('admin');$('#profileOpen').onclick=()=>go('profile');$('#authClose').onclick=()=>authDialog.close();$('#switchSignup').onclick=()=>openAuth('signup');$('#switchLogin').onclick=()=>openAuth('login');$('#switchAdmin').onclick=()=>openAuth('admin');
+    $('#authForm').addEventListener('submit',async e=>{e.preventDefault();const status=$('#authStatus');status.className='auth-status';status.textContent='در حال بررسی…';const data={username:$('#authUsername').value.trim(),password:$('#authPassword').value};if(authMode==='signup')data.name=$('#authName').value.trim();try{const result=await requestJSON(authMode==='signup'?'/api/signup':authMode==='admin'?'/api/admin/login':'/api/login',data);const me=await fetch('/api/me').then(r=>r.json());currentUser=me.user;updateAuthUI();authDialog.close();$('#authForm').reset();if(currentUser?.admin)go('admin');else if(authMode==='signup')go('profile')}catch(err){status.classList.add('error');status.textContent=err.message}});
+    $('#logoutButton').onclick=async()=>{await fetch('/api/logout',{method:'POST'});currentUser=null;updateAuthUI();go('home')};
+    async function loadProfile(){if(!currentUser||currentUser.admin){openAuth('login');return}try{const r=await fetch('/api/profile-data');if(r.ok){const d=await r.json();$('#profileName').value=d.name||'';$('#profilePhone').value=d.phone||'';$('#profilePortfolio').value=d.portfolio_url||'';$('#profileMotto').value=d.motto||''}}catch(_){}}
+    $('#profileForm').addEventListener('submit',async e=>{e.preventDefault();const status=$('#profileStatus');try{const d=await requestJSON('/api/profile',{name:$('#profileName').value.trim(),phone:$('#profilePhone').value.trim(),portfolio_url:$('#profilePortfolio').value.trim(),motto:$('#profileMotto').value.trim()});currentUser=d.user;updateAuthUI();status.className='auth-status success';status.textContent=d.message}catch(err){status.className='auth-status error';status.textContent=err.message}});
+    async function loadApplications(){const box=$('#adminApplications');if(!currentUser?.admin){box.innerHTML='<p class="muted">برای دیدن این بخش باید مدیر وارد شود.</p>';return}try{const r=await fetch('/api/admin/applications');const d=await r.json();if(!r.ok)throw new Error(d.message||'خطا در دریافت داده‌ها');box.innerHTML=d.applications.length?d.applications.map(a=>`<article class="application-item"><h3>#${a.id} — ${escapeHTML(a.name)}</h3><p>تماس: ${escapeHTML(a.phone)} · <a href="${escapeHTML(a.portfolio_url)}" target="_blank" rel="noopener">رزومه آنلاین ↗</a></p><p>شعار: ${escapeHTML(a.motto)}</p><p>فایل رزومه: ${escapeHTML(a.resume_filename)} · مدارک: ${escapeHTML((JSON.parse(a.documents_json)||[]).map(x=>x.original_name).join('، '))}</p><small class="muted">${escapeHTML(a.created_at)}</small></article>`).join(''):'<p class="muted">هنوز درخواستی ثبت نشده است.</p>'}catch(err){box.innerHTML=`<p class="auth-status error">${escapeHTML(err.message)}</p>`}}
+    $('#refreshApplications').onclick=loadApplications;
+    $('#refreshAnonymousMessages').onclick=loadAnonymousMessages;
+    async function loadAnonymousMessages(){const box=$('#adminAnonymousMessages');if(!currentUser?.admin){box.innerHTML='<p class="muted">'+localized('برای دیدن این بخش باید مدیر وارد شود.')+'</p>';return}try{const r=await fetch('/api/admin/anonymous-messages');const d=await r.json();if(!r.ok)throw new Error(d.message||localized('خطا در دریافت داده‌ها'));box.innerHTML=d.messages.length?d.messages.map(m=>`<article class="application-item"><h3>#${m.id} — ${localized('پیام ناشناس')}</h3><p class="anonymous-message-text">${escapeHTML(m.message).replace(/\n/g,'<br>')}</p><small class="muted">${escapeHTML(m.created_at)}</small></article>`).join(''):'<p class="muted">'+localized('هنوز پیامی ارسال نشده است.')+'</p>'}catch(err){box.innerHTML=`<p class="auth-status error">${escapeHTML(err.message)}</p>`}}
+    async function checkSession(){try{const r=await fetch('/api/me');const d=await r.json();currentUser=d.user||null;updateAuthUI()}catch(_){}}
+    checkSession();
+
+    const form=$('#applicationForm');
+    const status=$('#formStatus');
+    const submitButton=$('#submitButton');
+    form.addEventListener('submit',async event=>{
+      event.preventDefault();
+      status.className='form-status';status.textContent='';
+      if(!form.reportValidity())return;
+      const resume=$('#resume').files[0];
+      const docs=$('#documents').files;
+      if(!resume||!['text/html','application/xhtml+xml',''].includes(resume.type)&&! /\.html?$/i.test(resume.name)){
+        status.classList.add('error');status.textContent=localized('لطفاً فایل رزومه با پسوند HTML یا HTM انتخاب کن.');return;
+      }
+      if(resume.size>2*1024*1024){status.classList.add('error');status.textContent=localized('حجم فایل رزومه باید حداکثر ۲ مگابایت باشد.');return}
+      if(!docs.length){status.classList.add('error');status.textContent=localized('حداقل یک فایل مدرک انتخاب کن.');return}
+      const allowed=['.pdf','.png','.jpg','.jpeg','.doc','.docx','.zip'];
+      const extOK=[...docs].every(f=>allowed.some(ext=>f.name.toLowerCase().endsWith(ext)));
+      if(!extOK){status.classList.add('error');status.textContent=localized('فرمت یکی از مدارک مجاز نیست.');return}
+      const total=[...docs].reduce((n,f)=>n+f.size,0);
+      if(total>10*1024*1024||[...docs].some(f=>f.size>5*1024*1024)){status.classList.add('error');status.textContent=localized('حجم مدارک از محدودیت مجاز بیشتر است.');return}
+      submitButton.disabled=true;submitButton.style.opacity='.65';submitButton.innerHTML=localized('در حال ارسال…');status.textContent=localized('در حال ارسال فرم و فایل‌ها');
+      try{
+        const response=await fetch('/api/apply',{method:'POST',body:new FormData(form)});
+        const data=await response.json();
+        if(!response.ok||!data.ok)throw new Error(data.message||'ثبت درخواست انجام نشد.');
+        status.classList.add('success');status.textContent=data.message+(data.application_id?` کد پیگیری: ${data.application_id}`:'');
+        form.reset();
+      }catch(err){
+        status.classList.add('error');
+        status.textContent=location.protocol==='file:'?'برای ذخیره فرم، ابتدا app.py را اجرا کن و سایت را از آدرس http://127.0.0.1:8000 باز کن.':localized(err.message||'خطا در اتصال به سرور. اجرای app.py را بررسی کن.');
+      }finally{submitButton.disabled=false;submitButton.style.opacity='1';submitButton.innerHTML=localized('ارسال درخواست عضویت')+' <span>↗</span>'}
+    });
+
+    const anonymousForm=$('#anonymousMessageForm');
+    anonymousForm.addEventListener('submit', async event=>{event.preventDefault();const status=$('#anonymousStatus');const button=$('#anonymousSubmit');const message=$('#anonymousMessage').value.trim();status.className='form-status';status.textContent='';if(message.length<3||message.length>3000){status.classList.add('error');status.textContent=localized('پیام باید بین ۳ تا ۳۰۰۰ نویسه باشد.');return}button.disabled=true;button.style.opacity='.65';button.textContent=localized('در حال ارسال…');try{const result=await requestJSON('/api/anonymous-message',{message});status.classList.add('success');status.textContent=localized(result.message||'پیام ناشناس شما ارسال شد.');anonymousForm.reset();if(currentUser?.admin)loadAnonymousMessages()}catch(err){status.classList.add('error');status.textContent=localized(err.message||'ارسال پیام ناموفق بود.')}finally{button.disabled=false;button.style.opacity='1';button.textContent=localized('ارسال ناشناس ↗')}});
+
+    // Lightweight three-language UI. Language preference persists in localStorage.
+    function localized(text) {
+      const dict = (typeof currentLang !== 'undefined' && typeof i18n !== 'undefined') ? (i18n[currentLang] || {}) : {};
+      return dict[text] || text;
+    }
+    const i18n = {
+      en: {
+        'صفحه اصلی':'Home','اعضای تیم':'Team members','شرایط عضویت':'Join us','درباره ما':'About us',
+        'ورود':'Log in','ساخت حساب':'Create account','پروفایل من':'My profile','پنل مدیر':'Admin panel','خروج':'Log out',
+        'تیم':'Team','جایی برای ایده‌های بزرگ':'A place for bold ideas',
+        'ما فقط کدنویسی نمی‌کنیم؛ ایده‌ها را به تجربه‌هایی واقعی تبدیل می‌کنیم. کنار افرادی قرار بگیر که یاد می‌گیرند، می‌سازند و آینده را با هم شکل می‌دهند.':'We don’t just code; we turn ideas into real experiences. Join people who learn, build, and shape the future together.',
+        'مشاهده اعضای تیم':'Meet the team','درخواست عضویت':'Apply to join','عضو خلاق':'Creative members','حوزه تخصصی':'Specialties','ایده برای ساختن':'Ideas to build',
+        'درباره تیم ما':'About our team','ما فقط کد نمی‌نویسیم؛':'We do more than write code;','آینده را می‌سازیم.':'we build the future.',
+        'با اعضای تیم آشنا شو ←':'Meet the team ←','شرایط عضویت در تیم':'Team requirements','مدارک مورد نیاز':'Required documents',
+        'علاقه به یادگیری و حل مسئله':'Curiosity and problem-solving','مسئولیت‌پذیری و ارتباط مؤثر':'Responsibility and clear communication',
+        'توانایی کار تیمی و دریافت بازخورد':'Teamwork and openness to feedback','پایبندی به زمان‌بندی پروژه‌ها':'Commitment to project timelines',
+        'انگیزه برای ساختن نمونه‌کار واقعی':'Motivation to build real projects','رزومه شخصی با فرمت HTML':'Personal resume in HTML format',
+        'لینک پورتفولیو یا سایت رزومه':'Portfolio or resume website link','مدارک آموزشی یا گواهی‌های مرتبط':'Relevant certificates or credentials',
+        'لینک نمونه‌کارها و پروژه‌ها':'Links to projects and work samples','معرفی کوتاه و شعار شخصی':'Short introduction and personal motto',
+        'با اعضای تیم آشنا شو':'Meet our team','اعضای':'Members','تیم':'Team','جای تو در تیم خالی است.':'There’s a place for you on our team.',
+        'مهارت‌هایت را به ما معرفی کن و با هم چیزهای تازه بسازیم.':'Share your skills and let’s build something new together.',
+        'فرم ثبت‌نام':'Registration form','اطلاعات فردی و تخصصی':'Personal and professional details','نام و نام خانوادگی':'Full name',
+        'شماره تماس':'Phone number','لینک سایت رزومه':'Resume website URL','شعار فردی':'Personal motto',
+        'آپلود رزومه (HTML)':'Upload resume (HTML)','آپلود مدارک و گواهی‌ها':'Upload documents and certificates',
+        'ارسال درخواست عضویت':'Submit application','مشاهده رزومه ↗':'View resume ↗','رزومه و نمونه‌کار':'Resume & portfolio',
+        'جست‌وجوی نام یا مهارت...':'Search name or skill...','همه':'All','عضوی با این مشخصات پیدا نشد. فیلتر یا عبارت جست‌وجو را تغییر بده.':'No matching members. Try another filter or search term.',
+        'ساخت حساب کاربری':'Create an account','ورود به حساب':'Log in to your account','ورود مدیر':'Admin login',
+        'نام کاربری':'Username','رمز عبور':'Password','تکرار رمز عبور':'Confirm password','ایمیل':'Email',
+        'بستن':'Close','ورود به پنل مدیر':'Log in to admin panel','تغییرات ذخیره شد':'Changes saved',
+        'توسعه وب':'Web development','هوش مصنوعی':'Artificial intelligence','پروژه‌های متن‌باز':'Open-source projects',
+        'برنامه‌نویسی سیستمی':'Systems programming','ساخت حساب':'Create account','در حال بررسی…':'Checking…',
+        'کدِ خوب، مسئله را حل می‌کند؛ کدِ عالی، مسئله را ساده می‌کند.':'Good code solves problems; great code makes them simple.',
+        'تجربه‌های ساده، از فکرهای پیچیده متولد می‌شوند.':'Simple experiences are born from complex thinking.',
+        'زیر هر رابط خوب، معماری‌ای قابل اعتماد وجود دارد.':'Behind every great interface is reliable architecture.',
+        'جزئیات کوچک‌اند که یک محصول را به‌یادماندنی می‌کنند.':'Small details make a product memorable.',
+        'هر ایده، قبل از دیده‌شدن، به یک تصویر نیاز دارد.':'Every idea needs a visual before it can be seen.',
+        'ساختن مهم است؛ ساختن چیزی که همیشه کار کند مهم‌تر است.':'Building matters; building something reliable matters more.',
+        'BUILD. CREATE. BELONG.':'BUILD. CREATE. BELONG.'
+      },
+      es: {
+        'صفحه اصلی':'Inicio','اعضای تیم':'Equipo','شرایط عضویت':'Únete','درباره ما':'Sobre nosotros',
+        'ورود':'Iniciar sesión','ساخت حساب':'Crear cuenta','پروفایل من':'Mi perfil','پنل مدیر':'Panel admin','خروج':'Cerrar sesión',
+        'تیم':'Equipo','جایی برای ایده‌های بزرگ':'Un lugar para grandes ideas',
+        'ما فقط کدنویسی نمی‌کنیم؛ ایده‌ها را به تجربه‌هایی واقعی تبدیل می‌کنیم. کنار افرادی قرار بگیر که یاد می‌گیرند، می‌سازند و آینده را با هم شکل می‌دهند.':'No solo programamos: convertimos ideas en experiencias reales. Únete a quienes aprenden, crean y construyen el futuro juntos.',
+        'مشاهده اعضای تیم':'Conocer al equipo','درخواست عضویت':'Solicitar ingreso','عضو خلاق':'Miembros creativos','حوزه تخصصی':'Especialidades','ایده برای ساختن':'Ideas por crear',
+        'درباره تیم ما':'Sobre nuestro equipo','ما فقط کد نمی‌نویسیم؛':'No solo escribimos código;','آینده را می‌سازیم.':'construimos el futuro.',
+        'با اعضای تیم آشنا شو ←':'Conoce al equipo ←','شرایط عضویت در تیم':'Requisitos del equipo','مدارک مورد نیاز':'Documentos necesarios',
+        'علاقه به یادگیری و حل مسئله':'Curiosidad y resolución de problemas','مسئولیت‌پذیری و ارتباط مؤثر':'Responsabilidad y comunicación clara',
+        'توانایی کار تیمی و دریافت بازخورد':'Trabajo en equipo y apertura a comentarios','پایبندی به زمان‌بندی پروژه‌ها':'Compromiso con los plazos',
+        'انگیزه برای ساختن نمونه‌کار واقعی':'Motivación para crear proyectos reales','رزومه شخصی با فرمت HTML':'Currículum personal en formato HTML',
+        'لینک پورتفولیو یا سایت رزومه':'Enlace al portafolio o sitio de currículum','مدارک آموزشی یا گواهی‌های مرتبط':'Certificados o acreditaciones relevantes',
+        'لینک نمونه‌کارها و پروژه‌ها':'Enlaces a proyectos y trabajos','معرفی کوتاه و شعار شخصی':'Breve presentación y lema personal',
+        'اعضای':'Miembros','جای تو در تیم خالی است.':'¡Hay un lugar para ti en el equipo!',
+        'مهارت‌هایت را به ما معرفی کن و با هم چیزهای تازه بسازیم.':'Comparte tus habilidades y creemos algo nuevo juntos.',
+        'فرم ثبت‌نام':'Formulario de inscripción','اطلاعات فردی و تخصصی':'Datos personales y profesionales','نام و نام خانوادگی':'Nombre completo',
+        'شماره تماس':'Teléfono','لینک سایت رزومه':'URL del currículum','شعار فردی':'Lema personal',
+        'آپلود رزومه (HTML)':'Subir currículum (HTML)','آپلود مدارک و گواهی‌ها':'Subir documentos y certificados',
+        'ارسال درخواست عضویت':'Enviar solicitud','مشاهده رزومه ↗':'Ver currículum ↗','رزومه و نمونه‌کار':'Currículum y portafolio',
+        'جست‌وجوی نام یا مهارت...':'Buscar nombre o habilidad...','همه':'Todos','عضوی با این مشخصات پیدا نشد. فیلتر یا عبارت جست‌وجو را تغییر بده.':'No hay miembros coincidentes. Cambia el filtro o la búsqueda.',
+        'ساخت حساب کاربری':'Crear una cuenta','ورود به حساب':'Iniciar sesión','ورود مدیر':'Acceso de administrador',
+        'نام کاربری':'Usuario','رمز عبور':'Contraseña','تکرار رمز عبور':'Confirmar contraseña','ایمیل':'Correo electrónico',
+        'بستن':'Cerrar','ورود به پنل مدیر':'Entrar al panel admin','توسعه وب':'Desarrollo web','هوش مصنوعی':'Inteligencia artificial',
+        'پروژه‌های متن‌باز':'Proyectos de código abierto','برنامه‌نویسی سیستمی':'Programación de sistemas',
+        'کدِ خوب، مسئله را حل می‌کند؛ کدِ عالی، مسئله را ساده می‌کند.':'Good code solves problems; great code makes them simple.',
+        'تجربه‌های ساده، از فکرهای پیچیده متولد می‌شوند.':'Simple experiences are born from complex thinking.',
+        'زیر هر رابط خوب، معماری‌ای قابل اعتماد وجود دارد.':'Behind every great interface is reliable architecture.',
+        'جزئیات کوچک‌اند که یک محصول را به‌یادماندنی می‌کنند.':'Small details make a product memorable.',
+        'هر ایده، قبل از دیده‌شدن، به یک تصویر نیاز دارد.':'Every idea needs a visual before it can be seen.',
+        'ساختن مهم است؛ ساختن چیزی که همیشه کار کند مهم‌تر است.':'Building matters; building something reliable matters more.',
+        'کدِ خوب، مسئله را حل می‌کند؛ کدِ عالی، مسئله را ساده می‌کند.':'El buen código resuelve problemas; el excelente los simplifica.',
+        'تجربه‌های ساده، از فکرهای پیچیده متولد می‌شوند.':'Las experiencias simples nacen de ideas complejas.',
+        'زیر هر رابط خوب، معماری‌ای قابل اعتماد وجود دارد.':'Detrás de una gran interfaz hay una arquitectura fiable.',
+        'جزئیات کوچک‌اند که یک محصول را به‌یادماندنی می‌کنند.':'Los pequeños detalles hacen memorable un producto.',
+        'هر ایده، قبل از دیده‌شدن، به یک تصویر نیاز دارد.':'Toda idea necesita una imagen antes de hacerse visible.',
+        'ساختن مهم است؛ ساختن چیزی که همیشه کار کند مهم‌تر است.':'Crear importa; crear algo fiable importa aún más.',
+        'BUILD. CREATE. BELONG.':'BUILD. CREATE. BELONG.'
+      }
+    };
+    // Translation coverage for controls, contact forms, status messages, and remaining static UI.
+    Object.assign(i18n.en, {
+      'ارتباط با ما':'Contact us','با ما در ارتباط باش':'Get in touch','سؤال، پیشنهاد یا حرفی داری؟ از تلگرام با ما در ارتباط باش یا پیام ناشناست را همین‌جا بفرست.':'Have a question, suggestion, or something to say? Contact us on Telegram or send an anonymous message here.',
+      'ارتباط با ما در تلگرام ↗':'Contact us on Telegram ↗','فرستادن پیام ناشناس':'Send an anonymous message','نام و اطلاعات تماس لازم نیست؛ فقط پیام خودت را بنویس.':'No name or contact details needed—just write your message.','متن پیام':'Message','پیامت را اینجا بنویس...':'Write your message here...','۳ تا ۳۰۰۰ نویسه':'3–3,000 characters','ارسال ناشناس ↗':'Send anonymously ↗','در حال ارسال…':'Sending…','پیام ناشناس':'Anonymous message','پیام‌های ناشناس':'Anonymous messages','بارگذاری پیام‌ها':'Load messages','هنوز پیامی ارسال نشده است.':'No messages have been sent yet.','پیام ناشناس شما ارسال شد.':'Your anonymous message has been sent.','پیام باید بین ۳ تا ۳۰۰۰ نویسه باشد.':'The message must be between 3 and 3,000 characters.','ارسال پیام ناموفق بود.':'Could not send the message.',
+      'در حال بارگذاری اعضای تیم…':'Loading team members…','شرایط عضویت در تیم':'Team requirements','چیزی که از هر هم‌تیمی انتظار داریم.':'What we expect from every teammate.','برای اینکه بهتر با توانایی‌هایت آشنا شویم.':'Help us learn more about your skills.','هر کسی می‌تواند چیزی بسازد؛ ما دنبال آدم‌هایی هستیم که کنجکاوند، به اشتراک می‌گذارند و از بهتر کردن ایده‌ها نمی‌ترسند.':'Anyone can build something; we look for curious people who share and are not afraid to improve ideas.','آماده‌ای به ما بپیوندی؟':'Ready to join us?','قدم بعدی تو می‌تواند شروع یک پروژه متفاوت باشد.':'Your next step could start a different kind of project.','آدم‌هایی با مهارت‌ها و نگاه‌های متفاوت که برای یک هدف مشترک کنار هم کار می‌کنند.':'People with different skills and perspectives working together toward one shared goal.','عضو تیم':'Team members','تخصص':'Specialties','انرژی برای رشد':'Energy to grow','جست‌وجوی اعضای تیم':'Search team members','گام ۱ از ۱':'Step 1 of 1','مثلاً: علی محمدی':'e.g. Alex Morgan','یک جمله که طرز فکر، انگیزه یا مسیر تو را نشان می‌دهد...':'A sentence that reflects your mindset, motivation, or path...','فرمت مجاز: .html یا .htm — حداکثر ۲ مگابایت':'Allowed: .html or .htm — max 2 MB','تأیید می‌کنم اطلاعات واردشده صحیح است و با شرایط عضویت موافقم.':'I confirm that the information is accurate and agree to the membership requirements.','درخواست‌های عضویت ثبت‌شده در پایگاه داده.':'Membership applications saved in the database.','بارگذاری مجدد':'Refresh','در حال دریافت درخواست‌ها…':'Loading applications…','برای دیدن این بخش باید مدیر وارد شود.':'An administrator must log in to view this section.','خطا در دریافت داده‌ها':'Error retrieving data.','هنوز درخواستی ثبت نشده است.':'No applications have been submitted yet.','نام نمایشی':'Display name','ذخیره تغییرات ↗':'Save changes ↗','اطلاعات حساب خودت را به‌روزرسانی کن.':'Update your account details.','WELCOME TO GLITCHLOG':'WELCOME TO GLITCHLOG','نام کامل':'Full name','حداقل ۱۰ کاراکتر':'At least 10 characters','ورود کاربر':'User login','رزومه آنلاین ↗':'Online resume ↗','تماس:':'Contact:','شعار:':'Motto:','فایل رزومه:':'Resume file:','مدارک:':'Documents:'
+    });
+    Object.assign(i18n.es, {
+      'ارتباط با ما':'Contacto','با ما در ارتباط باش':'Ponte en contacto','سؤال، پیشنهاد یا حرفی داری؟ از تلگرام با ما در ارتباط باش یا پیام ناشناست را همین‌جا بفرست.':'¿Tienes una pregunta, sugerencia o algo que decir? Escríbenos por Telegram o envía aquí un mensaje anónimo.',
+      'ارتباط با ما در تلگرام ↗':'Contactar por Telegram ↗','فرستادن پیام ناشناس':'Enviar un mensaje anónimo','نام و اطلاعات تماس لازم نیست؛ فقط پیام خودت را بنویس.':'No hace falta nombre ni datos de contacto: escribe tu mensaje.','متن پیام':'Mensaje','پیامت را اینجا بنویس...':'Escribe tu mensaje aquí...','۳ تا ۳۰۰۰ نویسه':'De 3 a 3000 caracteres','ارسال ناشناس ↗':'Enviar anónimamente ↗','در حال ارسال…':'Enviando…','پیام ناشناس':'Mensaje anónimo','پیام‌های ناشناس':'Mensajes anónimos','بارگذاری پیام‌ها':'Cargar mensajes','هنوز پیامی ارسال نشده است.':'Todavía no se han enviado mensajes.','پیام ناشناس شما ارسال شد.':'Tu mensaje anónimo se ha enviado.','پیام باید بین ۳ تا ۳۰۰۰ نویسه باشد.':'El mensaje debe tener entre 3 y 3000 caracteres.','ارسال پیام ناموفق بود.':'No se pudo enviar el mensaje.',
+      'در حال بارگذاری اعضای تیم…':'Cargando miembros del equipo…','شرایط عضویت در تیم':'Requisitos del equipo','چیزی که از هر هم‌تیمی انتظار داریم.':'Lo que esperamos de cada integrante.','برای اینکه بهتر با توانایی‌هایت آشنا شویم.':'Ayúdanos a conocer mejor tus habilidades.','هر کسی می‌تواند چیزی بسازد؛ ما دنبال آدم‌هایی هستیم که کنجکاوند، به اشتراک می‌گذارند و از بهتر کردن ایده‌ها نمی‌ترسند.':'Cualquiera puede crear algo; buscamos personas curiosas que compartan y se atrevan a mejorar las ideas.','آماده‌ای به ما بپیوندی؟':'¿Listo para unirte?','قدم بعدی تو می‌تواند شروع یک پروژه متفاوت باشد.':'Tu siguiente paso puede iniciar un proyecto diferente.','آدم‌هایی با مهارت‌ها و نگاه‌های متفاوت که برای یک هدف مشترک کنار هم کار می‌کنند.':'Personas con distintas habilidades y perspectivas que trabajan por un objetivo común.','عضو تیم':'Miembros del equipo','تخصص':'Especialidades','انرژی برای رشد':'Energía para crecer','جست‌وجوی اعضای تیم':'Buscar miembros del equipo','گام ۱ از ۱':'Paso 1 de 1','مثلاً: علی محمدی':'p. ej., Alex Morgan','یک جمله که طرز فکر، انگیزه یا مسیر تو را نشان می‌دهد...':'Una frase que refleje tu mentalidad, motivación o camino...','فرمت مجاز: .html یا .htm — حداکثر ۲ مگابایت':'Formatos permitidos: .html o .htm — máx. 2 MB','تأیید می‌کنم اطلاعات واردشده صحیح است و با شرایط عضویت موافقم.':'Confirmo que la información es correcta y acepto los requisitos de membresía.','درخواست‌های عضویت ثبت‌شده در پایگاه داده.':'Solicitudes de membresía guardadas en la base de datos.','بارگذاری مجدد':'Actualizar','در حال دریافت درخواست‌ها…':'Cargando solicitudes…','برای دیدن این بخش باید مدیر وارد شود.':'Un administrador debe iniciar sesión para ver esta sección.','خطا در دریافت داده‌ها':'Error al recuperar los datos.','هنوز درخواستی ثبت نشده است.':'Todavía no hay solicitudes.','نام نمایشی':'Nombre para mostrar','ذخیره تغییرات ↗':'Guardar cambios ↗','اطلاعات حساب خودت را به‌روزرسانی کن.':'Actualiza los datos de tu cuenta.','نام کامل':'Nombre completo','حداقل ۱۰ کاراکتر':'Al menos 10 caracteres','ورود کاربر':'Acceso de usuario','رزومه آنلاین ↗':'Currículum en línea ↗','تماس:':'Contacto:','شعار:':'Lema:','فایل رزومه:':'Archivo del currículum:','مدارک:':'Documentos:'
+    });
+    Object.assign(i18n.en, {
+      'GLITCHLOG — تیمی برای ساختن آینده':'GLITCHLOG — A team building the future',
+      'GLITCHLOG یک تیم چندتخصصی برای توسعه وب، طراحی محصول و تجربه‌های دیجیتال است. ما یادگیری را با پروژه‌های واقعی ترکیب می‌کنیم تا هر عضو بتواند مهارتش را رشد دهد و اثر کارش را ببیند.':'GLITCHLOG is a multidisciplinary team for web development, product design, and digital experiences. We combine learning with real projects so every member can grow their skills and see their impact.',
+      'اگر برای یادگیری، خلق کردن و کار گروهی انگیزه داری، اطلاعاتت را ثبت کن تا با مسیر و توانایی‌هایت آشنا شویم.':'If you are motivated to learn, create, and collaborate, submit your details so we can learn about your skills and experience.',
+      'احترام به ایده‌ها و استانداردها':'Respect for ideas and standards','PDF، PNG، JPG، DOC، DOCX یا ZIP — حداکثر ۱۰ مگابایت در مجموع':'PDF, PNG, JPG, DOC, DOCX, or ZIP — max 10 MB total',
+      'آپلود فایل رزومه HTML':'Upload HTML resume','تکمیل فرم عضویت ←':'Complete membership form ←','شروع ثبت‌نام':'Start registration','رشد تخصصی':'Professional growth','تیم حرفه‌ای':'Professional team','محیط امن':'Safe environment','مهندسی سیستم':'Systems engineering','همکاری، بازخورد و تبادل تجربه':'Collaboration, feedback, and shared experience','یادگیری در کنار پروژه‌های واقعی':'Learn through real projects','— تیم GLITCHLOG':'— GLITCHLOG Team','بستن ×':'Close ×','پنل مدیریت':'Admin dashboard','ویرایش پروفایل':'Edit profile','لینک سایت رزومه / پورتفولیو':'Resume website / portfolio URL','باز کن.':'Open.','برای مشاهده پیام‌ها وارد پنل مدیر شو.':'Log in as an administrator to view messages.',
+      'تأیید می‌کنم اطلاعات واردشده صحیح است و با بررسی درخواست عضویت موافقم. فایل‌ها فقط برای بررسی همین درخواست ذخیره می‌شوند.':'I confirm that the information provided is accurate and agree to the membership review. Files will only be stored to review this application.',
+      'نکته: این فرم با بک‌اند پایتون اجرا می‌شود. برای ذخیره درخواست و فایل‌ها، سایت را از طریق آدرس محلی نمایش‌داده‌شده پس از اجرای':'Note: This form uses a Python backend. To save your application and files, open the local address shown after running',
+      'ارسال درخواست عضویت':'Submit membership application','لطفاً فایل رزومه با پسوند HTML یا HTM انتخاب کن.':'Please select a resume file with an HTML or HTM extension.','حجم فایل رزومه باید حداکثر ۲ مگابایت باشد.':'The resume file must be no larger than 2 MB.','حداقل یک فایل مدرک انتخاب کن.':'Please select at least one document.','فرمت یکی از مدارک مجاز نیست.':'One of the document formats is not allowed.','حجم مدارک از محدودیت مجاز بیشتر است.':'The documents exceed the allowed size.','در حال ارسال فرم و فایل‌ها':'Sending form and files…','ثبت درخواست انجام نشد.':'The application could not be submitted.','خطا در اتصال به سرور. اجرای app.py را بررسی کن.':'Could not connect to the server. Check that app.py is running.','لطفاً فایل رزومه با پسوند HTML یا HTM انتخاب کن.':'Please select an HTML or HTM resume file.','فرمت یکی از مدارک مجاز نیست.':'One of the document formats is not allowed.'
+    });
+    Object.assign(i18n.es, {
+      'GLITCHLOG — تیمی برای ساختن آینده':'GLITCHLOG — Un equipo que construye el futuro',
+      'GLITCHLOG یک تیم چندتخصصی برای توسعه وب، طراحی محصول و تجربه‌های دیجیتال است. ما یادگیری را با پروژه‌های واقعی ترکیب می‌کنیم تا هر عضو بتواند مهارتش را رشد دهد و اثر کارش را ببیند.':'GLITCHLOG es un equipo multidisciplinario de desarrollo web, diseño de productos y experiencias digitales. Combinamos aprendizaje con proyectos reales para que cada integrante desarrolle sus habilidades y vea su impacto.',
+      'اگر برای یادگیری، خلق کردن و کار گروهی انگیزه داری، اطلاعاتت را ثبت کن تا با مسیر و توانایی‌هایت آشنا شویم.':'Si te motiva aprender, crear y trabajar en equipo, envía tus datos para que conozcamos tus habilidades y experiencia.',
+      'احترام به ایده‌ها و استانداردها':'Respeto por las ideas y los estándares','PDF، PNG، JPG، DOC، DOCX یا ZIP — حداکثر ۱۰ مگابایت در مجموع':'PDF, PNG, JPG, DOC, DOCX o ZIP — máximo 10 MB en total',
+      'آپلود فایل رزومه HTML':'Subir currículum HTML','تکمیل فرم عضویت ←':'Completar formulario de ingreso ←','شروع ثبت‌نام':'Comenzar inscripción','رشد تخصصی':'Desarrollo profesional','تیم حرفه‌ای':'Equipo profesional','محیط امن':'Entorno seguro','مهندسی سیستم':'Ingeniería de sistemas','همکاری، بازخورد و تبادل تجربه':'Colaboración, comentarios e intercambio de experiencias','یادگیری در کنار پروژه‌های واقعی':'Aprender con proyectos reales','— تیم GLITCHLOG':'— Equipo GLITCHLOG','بستن ×':'Cerrar ×','پنل مدیریت':'Panel de administración','ویرایش پروفایل':'Editar perfil','لینک سایت رزومه / پورتفولیو':'Enlace al currículum / portafolio','باز کن.':'Abrir.','برای مشاهده پیام‌ها وارد پنل مدیر شو.':'Inicia sesión como administrador para ver los mensajes.',
+      'تأیید می‌کنم اطلاعات واردشده صحیح است و با بررسی درخواست عضویت موافقم. فایل‌ها فقط برای بررسی همین درخواست ذخیره می‌شوند.':'Confirmo que los datos son correctos y acepto la revisión de la solicitud. Los archivos se guardarán únicamente para evaluar esta solicitud.',
+      'ارسال درخواست عضویت':'Enviar solicitud de ingreso','لطفاً فایل رزومه با پسوند HTML یا HTM انتخاب کن.':'Selecciona un currículum con extensión HTML o HTM.','حجم فایل رزومه باید حداکثر ۲ مگابایت باشد.':'El currículum no debe superar los 2 MB.','حداقل یک فایل مدرک انتخاب کن.':'Selecciona al menos un documento.','فرمت یکی از مدارک مجاز نیست.':'Uno de los formatos de documento no está permitido.','حجم مدارک از محدودیت مجاز بیشتر است.':'Los documentos superan el tamaño permitido.','در حال ارسال فرم و فایل‌ها':'Enviando formulario y archivos…','ثبت درخواست انجام نشد.':'No se pudo enviar la solicitud.','خطا در اتصال به سرور. اجرای app.py را بررسی کن.':'No se pudo conectar con el servidor. Comprueba que app.py esté en ejecución.'
+    });
+    let currentLang = localStorage.getItem('glitchlog_lang') || 'fa';
+    const originalTextNodes = new Map();
+    function applyLanguage(lang) {
+      currentLang = ['fa','en','es'].includes(lang) ? lang : 'fa';
+      localStorage.setItem('glitchlog_lang', currentLang);
+      document.documentElement.lang = currentLang;
+      document.documentElement.dir = currentLang === 'fa' ? 'rtl' : 'ltr';
+      document.body.classList.toggle('latin-ui', currentLang !== 'fa');
+      document.querySelectorAll('.lang-btn').forEach(b => b.classList.toggle('active', b.dataset.lang === currentLang));
+      if (!originalTextNodes.size) {
+        const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
+        let node;
+        while ((node = walker.nextNode())) if (node.nodeValue.trim()) originalTextNodes.set(node, node.nodeValue);
+      }
+      const dict = i18n[currentLang] || {};
+      for (const [node, original] of originalTextNodes) {
+        if (!node.isConnected) continue;
+        const trimmed = original.trim();
+        if (currentLang === 'fa') { node.nodeValue = original; continue; }
+        if (dict[trimmed]) node.nodeValue = original.replace(trimmed, dict[trimmed]);
+      }
+      document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
+        const key = el.dataset.i18nPlaceholder;
+        el.placeholder = dict[key] || key;
+      });
+      document.querySelectorAll('input[placeholder],textarea[placeholder]').forEach(el => {
+        const original = el.dataset.originalPlaceholder || el.placeholder;
+        el.dataset.originalPlaceholder = original;
+        el.placeholder = currentLang === 'fa' ? original : (dict[original] || original);
+      });
+      document.querySelectorAll('[data-route="home"]').forEach(el => { if(el.dataset.scroll) return; });
+    }
+    document.querySelectorAll('.lang-btn').forEach(btn => btn.addEventListener('click', () => {
+      applyLanguage(btn.dataset.lang);
+      if (typeof renderMembers === 'function') renderMembers();
+      if (typeof currentUser !== 'undefined' && currentUser?.admin && routeFromHash()==='admin') { loadApplications(); loadAnonymousMessages(); }
+      if (currentLang === 'en' || currentLang === 'es') {
+        const title = currentLang === 'en' ? 'GLITCHLOG — Build the future together' : 'GLITCHLOG — Construyamos el futuro juntos';
+        document.title = title;
+      } else document.title = 'GLITCHLOG — تیمی برای ساختن آینده';
+    }));
+    applyLanguage(currentLang);
+  </script>
+</body>
+</html>
